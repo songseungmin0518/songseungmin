@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Seungmin - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        header .highlight {
+            color: #00d8ff;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+        /* Intro Section */
+        .intro {
+            margin-bottom: 50px;
+            padding: 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+        }
+        .intro .code-text {
+            color: #00ff00;
+            font-size: 1.1rem;
+        }
+        .intro .code-indent {
+            color: #00ff00;
+            font-size: 1.1rem;
+            margin-left: 20px;
+        }
+        /* Projects Section */
+        .projects {
+            margin-top: 40px;
+        }
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .project-item {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+        }
+        .project-item h3 {
+            color: #00d8ff;
+            margin-bottom: 10px;
+        }
+        .project-item p {
+            margin-bottom: 20px;
+        }
+        .project-link {
+            color: #00d8ff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .project-link:hover {
+            background-color: #00d8ff;
+            color: #000;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Hi, I'm <span class="highlight">Song Seungmin</span></h1>
+            <p class="subtitle">Frontend Developer & Researcher</p>
+        </header>
+        <!-- Introduction Section -->
+        <main>
+            <section class="intro">
+                <p class="code-text">// Who am I?</p>
+                <p class="code-text">const aboutMe = &#123;</p>
+                <p class="code-indent">name: "Song Seungmin",</p>
+                <p class="code-indent">role: "Frontend Developer",</p>
+                <p class="code-indent">skills: ["HTML", "CSS", "JavaScript", "React"],</p>
+                <p class="code-text">&#125;;</p>
+            </section>
+            <!-- Projects Section -->
+            <section class="projects">
+                <h2>Research Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>1. How to solve Baekjoon</h3>
+                        <p>my algorithm of baekjoon</p>
+                        <a href="http://smile-songbaekjoon.kro.kr/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>2. Responsive Web Design</h3>
+                        <p>Created a framework for modern web design.</p>
+                        <a href="http://smile-songport.kro.kr/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>3. Creative Game</h3>
+                        <p>Good game for relaxation.</p>
+                        <a href="http://smile-songgame.kro.kr/" target="_blank" class="project-link">View Project</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer Section -->
+        <footer>
+            <p>© 2025 Song Seungmin. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
